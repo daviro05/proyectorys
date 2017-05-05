@@ -17,7 +17,7 @@
 						<header>
 							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
 							<h1>Proyecto RyS</h1>
-							<!--<p>D.S.A Rolladores</p>-->
+						
 						</header>
 						<footer>
 							<ul class="icons">
