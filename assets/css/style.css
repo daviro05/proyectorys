@@ -1,0 +1,86 @@
+#btn_fb{
+	width: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input.btn_con{
+	background-color: #dfe3ee;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.modal-content-fb {
+background-color: #8b9dc3;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 500px;
+    border-radius: 10px;
+    color: black;
+}
+
+/* The Close Button */
+.close, .close_fb {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close_fb:hover,
+.close_fb:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.centra{
+	text-align: center;
+}
+
+input.campo{
+	width: 280px;
+}
+
+#contenido{
+	margin-left: 90px;
+}
+
+.correcto{
+	color:green;
+}
+
+.incorrecto{
+	color:red;
+}
+
+.thumb {
+	height: 300px;
+	border: 1px solid #000;
+	margin: 10px 5px 0 0;
+}
