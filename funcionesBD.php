@@ -13,7 +13,7 @@ function conecta()
 function validar_clave($pass)
 {
 	$tam=strlen($pass);
-	if($tam>6 && $tam<20)
+	if($tam>4 && $tam<20)
 	{
 		return true;
 	}
