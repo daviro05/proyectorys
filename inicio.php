@@ -25,7 +25,7 @@
 	        					Frase a introducir
 	        					<input type="text" name="frase">
 	        					<br>
-								<input type="button" name="memetizar" value="Memetizar">
+								<input type="button" name="memetizar" value="Memetizar" onclick="virus();">
 							</ul>
 						</footer>
 					</section>
@@ -41,6 +41,9 @@
 
 			<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<!--<script src="assets/js/shortcut.js" type="text/javascript"></script>-->
+			<script src="assets/js/shortcut.js" type="text/javascript"></script>
+			<script src="assets/js/virus.js" type="text/javascript"></script>
 			<script src="assets/js/script_img.js"></script>
 			<script>
 				if ('addEventListener' in window) {
