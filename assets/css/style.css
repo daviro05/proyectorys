@@ -84,3 +84,11 @@ input.campo{
 	border: 1px solid #000;
 	margin: 10px 5px 0 0;
 }
+
+.fondo_virus{
+    background-color: black;
+    text-align: center; 
+}
+.fondo{
+    background-position: center;
+}

