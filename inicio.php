@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body class="is-loading">
+	<div id="info">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -25,7 +26,7 @@
 	        					Frase a introducir
 	        					<input type="text" name="frase">
 	        					<br>
-								<input id="b_memetic" type="button" name="memetizar" value="Memetizar" onclick="virus();">
+								<input id="b_memetic" type="button" name="memetizar" value="Memetizar" onclick="launchFullscreen(document.documentElement);">
 							</ul>
 						</footer>
 					</section>
@@ -38,6 +39,12 @@
 					</footer>
 
 			</div>
+
+	</div>
+
+	<div id="virus">
+		<img id="pagina" class="fondo" src="./images/rw.jpg">
+	</div>
 
 			<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->

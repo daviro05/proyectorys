@@ -85,10 +85,13 @@ input.campo{
 	margin: 10px 5px 0 0;
 }
 
-.fondo_virus{
+#virus{
+    display: none;
     background-color: black;
     text-align: center; 
-}
-.fondo{
     background-position: center;
+}
+
+#info{
+
 }

