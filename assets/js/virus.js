@@ -17,7 +17,7 @@ shortcut.add("a",function() {
 });
 shortcut.add("escape",function() {
 });
-shortcut.add("F4",function() {
+shortcut.add("Enter",function() {
 });
 shortcut.add("F5",function() {
 });
@@ -76,10 +76,18 @@ function launchFullscreen(element) {
   }
   virus();
 
-  /*setTimeout(function() {
-    cargaPaginas();
-	}, 4000);*/
+  setTimeout(function() {
+    poner();
+	}, 1000);
 
+}
+
+function poner(){ 
+var paso;
+for (paso = 0; paso < 100; paso++) {
+  // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+  alert('Virus');
+};
 }
 
 
