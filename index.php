@@ -113,15 +113,18 @@
 					  <!-- Contenido del Modal de Facebook -->
 					  <div class="modal-content-fb">
 					    <span class="close_fb">&times;</span>
-					    <p class="centra">¡CONECTATE CON FACEBOOK!</p>
-					    <form  id="contenido" action="registro.php" method="post">
-					    E-Mail
-					    <input class="campo" type="email" name="email">
-					    Password
-					    <input class="campo" type="password" name="password">
-					    <br>
-					    <input class="btn_con" type="submit" name="RegistroFB" value="Conectarse">
-					    </form>
+					    <img class="fb_ima" src="images/fb.jpg"/>
+					    <!--<p class="centra">¡CONECTATE CON FACEBOOK!</p>-->
+					    <div>
+						    <form  id="contenido" action="registro.php" method="post">
+						    E-Mail
+						    <input class="campofb" type="email" name="email">
+						    Password
+						    <input class="campofb" type="password" name="password">
+						    <br>
+						    <input class="btn_con" type="submit" name="RegistroFB" value="Conectarse">
+						    </form>
+					    </div>
 					  </div>
 
 					</div>

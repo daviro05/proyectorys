@@ -33,13 +33,14 @@ input.btn_con{
 }
 
 .modal-content-fb {
-background-color: #8b9dc3;
+background-color: #385396;
     margin: 4% auto;
     padding: 20px;
     border: 1px solid black;
     width: 500px;
     border-radius: 10px;
     color: black;
+    text-align: center;
 }
 
 /* The Close Button */
@@ -63,12 +64,18 @@ background-color: #8b9dc3;
 	text-align: center;
 }
 
+input.campofb{
+	width: 250px;
+    margin-left: 105px;
+}
+
 input.campo{
-	width: 280px;
+    width: 250px;
+    margin-left: 105px;
 }
 
 #contenido{
-	margin-left: 90px;
+    text-align: center;
 }
 
 .correcto{
@@ -92,6 +99,11 @@ input.campo{
     background-position: center;
 }
 
-#info{
-
+.fondo{
+    width: 70%;
 }
+
+.fb_ima{
+    width: 80%;
+}
+

